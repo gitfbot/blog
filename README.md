@@ -1,5 +1,7 @@
 # My Blog
-
+---
+https://gitfbot.github.io/blog
+---
 This repo is set up to publish an Obsidian-style blog with [Quartz](https://quartz.jzhao.xyz/) and host it on GitHub Pages.
 
 ## Where to write
