@@ -1,5 +1,9 @@
-# Welcome to My Blog
+# My Blog
 
-This is my collection of public notes and thoughts.
+Welcome to my site.
 
-[[Welcome]]
+This is where I publish notes, posts, and experiments from my Obsidian vault.
+
+Start here:
+
+- [[Welcome]]

@@ -1,33 +1,37 @@
 # My Blog
 
-Just my public and online notes and thoughts.
+This repo is set up to publish an Obsidian-style blog with [Quartz](https://quartz.jzhao.xyz/) and host it on GitHub Pages.
 
-This blog is built using [Quartz](https://quartz.jzhao.xyz/), a static site generator for Obsidian vaults.
+## Where to write
 
-## Setup
+Put public notes and posts in `content/`.
 
-- Content is in the `content/` directory (formerly `vault/`).
-- Built with Quartz 4.
-- Hosted on GitHub Pages.
+- `content/index.md` is the homepage.
+- Any other Markdown file in `content/` becomes a page on the site.
+- Obsidian wikilinks like `[[My Note]]` work.
+- Private notes can stay outside this repo, or in ignored folders like `.obsidian/`, `private/`, and `templates/`.
 
-## Local Development
+## Local development
 
 1. Install dependencies: `npm install`
-2. Build and serve: `npx quartz build --serve`
-3. Open http://localhost:8080
+2. Start the local site: `npm run dev`
+3. Open `http://localhost:8080`
 
-## Deployment
+## Deploy to GitHub Pages
 
-Pushes to `main` branch trigger GitHub Actions to build and deploy to GitHub Pages.
+This repo already includes a GitHub Actions workflow that deploys on pushes to `main`.
 
-Make sure to:
-- Set `baseUrl` in `quartz.config.ts` to your GitHub Pages URL (e.g., `username.github.io/blog`).
-- Enable GitHub Pages in repo settings with source: GitHub Actions.
+In GitHub, open this repository and set:
 
-## Sponsors
+1. `Settings` -> `Pages`
+2. `Source` -> `GitHub Actions`
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+The configured site URL for this repo is:
+
+- `https://gitfbot.github.io/blog`
+
+## Useful commands
+
+- `npm run dev` - build and serve locally
+- `npm run build` - produce the static site in `public/`
+- `npm run check` - typecheck and run formatting checks
